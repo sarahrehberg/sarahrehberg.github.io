@@ -1,0 +1,35 @@
+---
+layout: home-page
+title: About
+permalink: /about/
+---
+<div class="small-wrapper">
+  <div class="about-container">
+    <section class="about-header">
+      <div class="author-image-container">
+        <img src="{{site.baseurl}}/assets/img/{% if site.author-pic %}{{site.author-pic}}{% endif %}" alt="{{site.author}}">
+      </div>
+      <p class="subtitle">Ich bin freiberufliche Historikerin aus Berlin – einer Stadt, deren umfangreiches und abwechslungsreiches Angebot aus Musik, Kunst und Geschichte ich absolut schätze. Außerdem lebe ich hier mit meinem 4-jährigen Sohn und meinem Mann.</p>
+      <br />
+       <p class="subtitle">In den letzten Jahren habe ich hauptsächlich an kleineren und größeren Forschungs-, Ausstellungs- und Buchprojekten mitgearbeitet. Ich beabsichtige, sie alle hier bald zur Ansicht hinzuzufügen. Darüber hinaus interessiere ich mich aber auch für die Bereiche der Medienarbeit, wie etwa das Konzipieren und Realisieren von Radio-Features, Kurz- und Dokumentarfilmen, sowie der politischen Bildungsarbeit.</p>
+    <br />
+       <p class="subtitle">
+        Die Themen, mit denen ich mich in meinen Projekten stets auseinandersetze, haben eine große Bedeutung für mich und aus diesem Grund möchte ich sie gern mit allen Interessierten teilen und zugänglich machen. Bei näherem Interesse, gibt es die Möglichkeit, einzelne Texte einzusehen und herunterzuladen, ggf. weiterführende Links aufzurufen oder natürlich mir eine Email zu schicken.
+       </p>
+
+    </section>
+    <section class="about-body">
+      <ul class="contact-list">
+    
+
+      {% if site.linkedin %}
+        <li class="linkedin"><a href="https://in.linkedin.com/in/{{site.linkedin}}" target="_blank">Connect via <i class="fa fa-linkedin"></i></a></li>
+      {% else %}
+        <li class="linkedin"><a href="https://in.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+      {% endif %}
+
+     
+      </ul>
+    </section> <!-- End About Body-->
+  </div> <!-- End About Container -->
+</div> <!-- End Small Wrapper -->
